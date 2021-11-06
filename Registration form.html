@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <style>
+        h1 {
+            color: rgb(7, 151, 31);
+            font-family: 'courier new';
+            font-size: 300%;
+            background-color: darkturquoise;
+        }
+        #div1 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    
+    
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <h1>ART AND CRAFT</h1>
+
+    <MARQUEE bgcolor="yellow" loop="-5" scrollamount="3" width="100%">"The Painting Class will be started from 20
+        November" "The Orientation Program will be held on 15 November">
+    </MARQUEE><br><br>
+    
+    <center>
+        <img src="istockphoto-1190200652-612x612.jpg" alt="painting" width="1000" height="408">  
+    
+    </center>
+    <p>Register with correct information if any case information is wrong than registration certificate will be canceled
+    </p>
+    
+    <center>
+        <h2>REGISTRATION FORM</h2>
+    </center>
+    <hr>
+    <h2 style="background-color:darkturquoise;">PERSONAL INFORMATION</h2>
+
+    <form action="">
+        <fieldset>
+            <label for="fname">First name*:</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Last name*:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="faname">Father's Name*:</label>
+            <input type="text" id="faname" name="faname" required>
+            <label for="mname">Mother's name*:</label>
+            <input type="text" id="mname" name="mname" required>
+            <label for="Gend">Gender*:</label>
+            <input list="gender" name="gender" required>
+            <datalist id="gender">
+                <option value="Male">
+                <option value="Female">
+                <option value="Others">
+            </datalist>
+            <label for="ca1">Category*:</label>
+            <input type="radio" id="Gen" name="Category" value="General" required>
+            <label for="Gen">General</label>
+            <input type="radio" id="OB" name="Category" value="OBC" required>
+            <label for="OB">OBC</label>
+            <input type="radio" id="S1" name="Category" value="SC" required>
+            <label for="S1">SC</label>
+            <input type="radio" id="S2" name="Category" value="ST" required>
+            <label for="S2">ST</label>
+            <input type="radio" id="OTHER" name="Category" value="Other" required>
+            <label for="OTHER">Other</label><br><br>
+
+            <label for="DOB">Date of Birth*:</label>
+            <input type="date" id="DOB" name="Date of Birth" required>
+
+            <label for="Proof">Photo Id Proof*:</label>
+            <input list="Proof" name="proof" required>
+            <datalist id="proof">
+                <option value="Adhar Card">
+                <option value="College Id Proof">
+                <option value="Pan Card">
+                <option value="Passport">
+                <option value="Voter Id Card">
+                <option value="Voter Id Card">
+                <option value="Liscense">
+            </datalist>
+            <label for="email">Email id*:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="phone">Mobile No.*:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        </fieldset>
+        <h3 style="background-color:darkturquoise;">PERMANENT ADDRESS</h3>
+        <fieldset>
+            <label for="add1">Address line 1*:</label>
+            <input type="text" id="add1" name="add1" required>
+            <label for="add2">Address line 2*:</label>
+            <input type="text" id="add2" name="add2" required>
+            <label for="add3">Address line 3*:</label>
+            <input type="text" id="add3" name="add3" required>
+            <label for="Dist">District*:</label>
+            <input type="text" id="Dist" name="Dist" required>
+            <label for="st">State*:</label>
+            <input list="st" name="st" required><br><br>
+            <datalist id="st">
+                <option value="Arunachal Pradesh">
+                <option value="Andhra Pradesh">
+                <option value="Bihar">
+                <option value="Chhatishgarh">
+                <option value="Goa">
+                <option value="Gujarat">
+                <option value="Himachal Pradesh">
+                <option value="Jaamu & Kashmir">
+                <option value="Jharkhand">
+                <option value="Kerla">
+                <option value="Karnatka">
+                <option value="Maharashtra">
+                <option value="Madhya Pradesh">
+                <option value="Meghalaya">
+                <option value="Mizoram">
+                <option value="Orrisa">
+                <option value="Rajasthan">
+                <option value="Tamil Nadu">
+                <option value="West Bengal">
+            </datalist>
+            <label for="pin">Pin Code*:</label>
+            <input type="text" id="pin" name="pin" required>
+            <h3>Correspondse Addess</h3>
+
+            <label for="add1">Address line 1*:</label>
+            <input type="text" id="add1" name="add1" required>
+            <label for="add2">Address line 2*:</label>
+            <input type="text" id="add2" name="add2" required>
+            <label for="add3">Address line 3*:</label>
+            <input type="text" id="add3" name="add3" required>
+            <label for="Dist">District*:</label>
+            <input type="text" id="Dist" name="Dist" required>
+            <label for="st">State*:</label>
+            <input list="st" name="st" required><br><br>
+            <datalist id="st">
+                <option value="Arunachal Pradesh">
+                <option value="Andhra Pradesh">
+                <option value="Bihar">
+                <option value="Chhatishgarh">
+                <option value="Goa">
+                <option value="Gujarat">
+                <option value="Himachal Pradesh">
+                <option value="Jaamu & Kashmir">
+                <option value="Jharkhand">
+                <option value="Kerla">
+                <option value="Karnatka">
+                <option value="Maharashtra">
+                <option value="Madhya Pradesh">
+                <option value="Meghalaya">
+                <option value="Mizoram">
+                <option value="Orrisa">
+                <option value="Rajasthan">
+                <option value="Tamil Nadu">
+                <option value="West Bengal">
+            </datalist>
+            <label for="pin">Pin Code*:</label>
+            <input type="text" id="pin" name="pin" required>
+        </fieldset><br>
+        <!-- next element -->
+        <h2 style="background-color:darkturquoise;">ACADEMIC INFORMATION</h2>
+        <fieldset>
+            <label for="EXAM">Participated in National or International level Exam in last 2 years*:</label>
+            <input type="radio" id="EXAM" name="ExAM" value="Yes" required>
+            <label for="EXAM">Yes</label>
+            <input type="radio" id="EXAM" name="EXAM" value="NO" required>
+            <label for="EXAM">NO</label><br><br>
+            <!-- <form method="post" enctype="multipart/form-data"> -->
+            <div>
+                <label for="image_uploads">Upload the Exam Certificate in PDF file (maximum 600 KB).pdf*</label>
+                <input type="file" id="file_uploads" name="file_uploads" accept=".pdf" required><br><br>
+            </div>
+            <div class="preview">
+            </div>
+            <div>
+                <button type="button" onclick="alert('Uploaded Suceesfully')">Upload</button><br><br>
+                <label for="Experience">Job experience in Art *:</label>
+                <input type="radio" id="Experience" name="Experience" value="Yes" required>
+                <label for="Experience">Yes</label>
+                <input type="radio" id="Experience" name="Experience" value="NO" required>
+                <label for="Experience">NO</label><br><br>
+                <label for="Certifcate">Have You Got Extra Curriculum Certificate in
+                    Painting/Art/Collage/Origami*:</label>
+                <input type="radio" id="Certificate" name="Certificates" value="Yes" required>
+                <label for="Certificate">Yes</label>
+                <input type="radio" id="Certificate" name="Certificates" value="NO" required>
+                <label for="Certificate">NO</label><br><br>
+                <!-- <form method="post" enctype="multipart/form-data"> -->
+                <div>
+                    <label for="image_uploads">Upload Certificate (PNG, JPG)*</label>
+                    <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png"
+                        required><br><br>
+                </div>
+                <div class="preview">
+                </div>
+                <div>
+                    <button type="button" onclick="alert('Uploaded Suceesfully')">Upload</button><br><br>
+
+        </fieldset><br>
+
+
+        <fieldset>
+            <!-- <form method="post" enctype="multipart/form-data"> -->
+            <div>
+                <label for="image_uploads">Upload Photo in (PNG, JPG) upto 70 KB*</label>
+                <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" required><br><br>
+            </div>
+            <div class="preview">
+            </div>
+            <div>
+                <button type="button" onclick="alert('Uploaded Suceesfully')">Upload</button><br><br>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+                <!-- <form method="post" enctype="multipart/form-data"> -->
+                <div>
+                    <label for="sign_uploads">Upload Signature in (PNG, JPG) upto 50 KB*</label>
+                    <input type="file" id="image_uploads" name="sign_uploads" accept=".jpg, .jpeg, .png"
+                        required><br><br>
+                </div>
+                <div class="preview">
+                </div>
+                <div>
+                    <button type="button" onclick="alert('Uploaded Suceesfully')">Upload</button><br><br>
+                    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+        </fieldset>
+        <input type="checkbox" id="Term & Conditions" name="" value="allowed">
+        <label for="Term & Conditions">I here by that which I fill the form all are correct, if in any cases the
+            information will wrong the form will canceled thier are no any responsible on
+            institution.</label><br><br>
+        <!-- end next element -->
+        <center>
+            <button type="button" onclick="alert('Registered Suceessfully')">Submit</button><br><br>
+        </center>
+    </form>
+</body>
+
+</html>
